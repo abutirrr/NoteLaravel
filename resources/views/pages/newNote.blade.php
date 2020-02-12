@@ -8,7 +8,8 @@
             {!! Form::open(['route' => 'createNewNote' , 'method' => 'POST']) !!}
             <div class="form-group">
                 {{Form::Text('title','',['class'=>'form-control','style'=>'margin-bottom:10px','placeholder'=>'Enter Note Title'])}}
-                {{Form::TextArea('description','',['class'=>'form-control','style'=>'width:100%','placeholder'=>'Enter Note Description'])}}
+                {{Form::TextArea('description','',['class'=>'form-control','style'=>'width:100% ; resize:none','placeholder'=>'Enter Note Description'])}}
+                @include('inc.categories')
                 {{Form::submit('SAVE',['class'=>'btn-dark','style'=>'padding: 5px 40px;float: right; margin-top: 10px'])}}
             </div>
                 @include('inc.messeges')

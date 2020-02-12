@@ -18,4 +18,9 @@ class Note extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class,'note_category');
+    }
 }

@@ -2,31 +2,36 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\note;
 use http\Client\Curl\User;
 use http\Env\Response;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
+use function Sodium\add;
 
 class NotesController extends Controller
 {
 
     public function newNote(Request $request)
     {
-
         $id = $request->id;
-        return view('pages.newNote', compact('id'));
+        $categories = Category::all();
+        return view('pages.newNote', compact('id','categories'));
     }
 
     public function createANote(Request $request)
     {
-        // A USER CREATES A NOTE : USER ID , NOTE TITLE , NOTE DESCRIPTION
+        // A USER CREATES A NOTE : USER ID , NOTE TITLE ,Category id's, NOTE DESCRIPTION
         $user_id = $this->fetchAuthUserId();
         if (!empty($user_id)) {
+
             $NoteData = $this->validate($request, [
                 'title' => 'required|unique:notes,title',
                 'description' => 'required',
+                'categories' => ''
             ]);
 
             // CREATE A NOTE
@@ -36,6 +41,11 @@ class NotesController extends Controller
             $newNote->user_id = $user_id;
             $newNote->save();
 
+            $categoryIds = $request->categories;
+            $categories = Category::find($categoryIds);
+
+            $newNote->categories()->attach($categoryIds);
+
             return redirect()->route('Home');
         }
     }
@@ -43,6 +53,7 @@ class NotesController extends Controller
     public function updateNote(Request $request)
     {
         // A USER CREATES A NOTE : USER ID , NOTE TITLE , NOTE DESCRIPTION
+
         $user_id = $this->fetchAuthUserId();
         $note_id = $request->note_id;
 
@@ -53,8 +64,15 @@ class NotesController extends Controller
             $updatedNote = $this->validate($request, [
                 'title' => "required|unique:notes,title,$note_id",
                 'description' => 'required',
+                'categories' => ''
             ]);
+            $updatedNote = Arr::except($updatedNote,'categories');
             $note->update($updatedNote);
+
+            $categoryIds = $request->categories;
+            $categories = Category::find($categoryIds);
+            $note->categories()->detach();
+            $note->categories()->attach($categoryIds);
 
             return redirect()->back()->withSuccess('Updated Successfully');
         }
@@ -65,7 +83,10 @@ class NotesController extends Controller
         // USER CLICKS ON A NOTE WHICH WILL OPEN
 
         $note = Note::find($id);
-        return view('pages.openNote', compact('note'));
+        $checkedCategories = Note::find($id)->categories()->get();
+        $categories = Category::all();
+
+        return view('pages.openNote', compact('note','checkedCategories','categories'));
     }
 
     public function deleteNote($id)

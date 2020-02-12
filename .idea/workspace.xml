@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="740a0ef0-8a39-466c-a59a-def233eff1ce" name="Default Changelist" comment="" />
+    <list default="true" id="740a0ef0-8a39-466c-a59a-def233eff1ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NotesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NotesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Note.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Note.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/newNote.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/newNote.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/openNote.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/openNote.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +22,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -107,13 +120,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1XXAFxrya4wT1C6MyNdyAWl8T5J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -151,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581181965368</updated>
-      <workItem from="1581181968189" duration="58079000" />
+      <workItem from="1581181968189" duration="100612000" />
     </task>
     <servers />
   </component>
@@ -159,26 +175,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581429812786">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1581429812786" />
     <state x="744" y="106" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581324079908">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="744" y="106" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1581324079908" />
-    <state width="622" height="443" key="GridCell.Tab.0.bottom" timestamp="1581185765139">
+    <state width="742" height="442" key="GridCell.Tab.0.bottom" timestamp="1581445881025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="622" height="443" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581185765139" />
-    <state width="622" height="443" key="GridCell.Tab.0.center" timestamp="1581185765139">
+    <state width="742" height="442" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581445881025" />
+    <state width="742" height="442" key="GridCell.Tab.0.center" timestamp="1581445881024">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="622" height="443" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581185765139" />
-    <state width="622" height="443" key="GridCell.Tab.0.left" timestamp="1581185765139">
+    <state width="742" height="442" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581445881024" />
+    <state width="742" height="442" key="GridCell.Tab.0.left" timestamp="1581445881024">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="622" height="443" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581185765139" />
-    <state width="622" height="443" key="GridCell.Tab.0.right" timestamp="1581185765139">
+    <state width="742" height="442" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581445881024" />
+    <state width="742" height="442" key="GridCell.Tab.0.right" timestamp="1581445881025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="622" height="443" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581185765139" />
+    <state width="742" height="442" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581445881025" />
     <state x="9" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581184250126">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

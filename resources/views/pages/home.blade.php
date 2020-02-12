@@ -5,7 +5,7 @@
     <div style="display: flex;">
 
         {{--    This is the left div  --}}
-        <div style="width: 30%; margin-left: 10px ">
+        <div style="width: 50%; margin-left: 10px ">
             <div>
                 {!! Form::open(['route' => 'search' ,'class'=>'form-inline mt-2 mt-md-0','style'=>'margin-bottom: 10px; margin-left: 5px', 'method' => 'GET']) !!}
                 {{Form::Text('search','',['class'=>'form-inline mt-2 mt-md-0','style'=>'margin-right:10px ; width:180px','placeholder'=>'  Search'])}}
