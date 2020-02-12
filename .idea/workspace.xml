@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740a0ef0-8a39-466c-a59a-def233eff1ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NotesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NotesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Note.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Note.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/NoteCategory.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/newNote.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/newNote.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/openNote.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/openNote.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/NoteCategoryTableSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/NoteTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/NoteTableSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +163,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581181965368</updated>
-      <workItem from="1581181968189" duration="100612000" />
+      <workItem from="1581181968189" duration="112308000" />
     </task>
     <servers />
   </component>
@@ -183,22 +179,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="744" y="106" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1581324079908" />
-    <state width="742" height="442" key="GridCell.Tab.0.bottom" timestamp="1581445881025">
+    <state width="742" height="442" key="GridCell.Tab.0.bottom" timestamp="1581503424672">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="742" height="442" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581445881025" />
-    <state width="742" height="442" key="GridCell.Tab.0.center" timestamp="1581445881024">
+    <state width="742" height="442" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581503424672" />
+    <state width="742" height="442" key="GridCell.Tab.0.center" timestamp="1581503424672">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="742" height="442" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581445881024" />
-    <state width="742" height="442" key="GridCell.Tab.0.left" timestamp="1581445881024">
+    <state width="742" height="442" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581503424672" />
+    <state width="742" height="442" key="GridCell.Tab.0.left" timestamp="1581503424672">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="742" height="442" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581445881024" />
-    <state width="742" height="442" key="GridCell.Tab.0.right" timestamp="1581445881025">
+    <state width="742" height="442" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581503424672" />
+    <state width="742" height="442" key="GridCell.Tab.0.right" timestamp="1581503424672">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="742" height="442" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581445881025" />
+    <state width="742" height="442" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581503424672" />
     <state x="9" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581184250126">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
